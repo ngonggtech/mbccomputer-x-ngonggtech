@@ -54,56 +54,56 @@ export const PREBUILT_PCS: PrebuiltPC[] = [
     name: 'Neon Nova X',
     specs: 'Intel i9-14900K | RTX 4090 | 64GB DDR5 | 4TB NVMe',
     price: 97490000,
-    image: 'https://ibb.co/cc4LbW3C'
+    image: 'https://i.ibb.co/DD0pGBW8/1.png'
   },
   {
     id: 'cyber-pulse',
     name: 'Cyber Pulse Pro',
     specs: 'Ryzen 7 7800X3D | RTX 4080 Super | 32GB DDR5 | 2TB NVMe',
     price: 62490000,
-    image: 'https://ibb.co/KzVVTMGq'
+    image: 'https://i.ibb.co/fGrrjhSp/2.png'
   },
   {
     id: 'synth-wave',
     name: 'SynthWave Core',
     specs: 'Intel i5-13600K | RTX 4070 Ti | 32GB DDR5 | 1TB NVMe',
     price: 44990000,
-    image: 'https://ibb.co/bgBwDy79'
+    image: 'https://i.ibb.co/kg8bvrMC/3.png'
   },
   {
     id: 'glitch-mini',
     name: 'Glitch Mini-ITX',
     specs: 'Ryzen 5 7600X | RTX 4060 Ti | 32GB DDR5 | 1TB NVMe',
     price: 32490000,
-    image: 'https://ibb.co/d0G2JKjY'
+    image: 'https://i.ibb.co/zhGRHfQv/4.png'
   },
   {
     id: 'quantum-strike',
     name: 'Quantum Strike X',
     specs: 'Intel i7-14700K | RTX 4080 | 32GB DDR5 | 2TB NVMe',
     price: 58500000,
-    image: 'https://ibb.co/RTRhyCZW'
+    image: 'https://i.ibb.co/KxTNw9RH/5.png'
   },
   {
     id: 'nebula-forge',
     name: 'Nebula Forge 9',
     specs: 'Ryzen 9 7950X | RX 7900 XTX | 64GB DDR5 | 2TB NVMe',
     price: 61990000,
-    image: 'https://ibb.co/xSwqzVqm'
+    image: 'https://i.ibb.co/rGq25n2b/6.png'
   },
   {
     id: 'plasma-stealth',
     name: 'Plasma Stealth',
     specs: 'Intel i5-14600KF | RTX 4070 SUPER | 32GB DDR5 | 1TB NVMe',
     price: 38900000,
-    image: 'https://ibb.co/5g7fmY23'
+    image: 'https://i.ibb.co/21bfx85r/7.png'
   },
   {
     id: 'void-walker',
     name: 'Void Walker',
     specs: 'Ryzen 5 7600 | RX 7800 XT | 32GB DDR5 | 1TB NVMe',
     price: 29500000,
-    image: 'https://ibb.co/27MBKB92'
+    image: 'https://i.ibb.co/Z6gCTCjs/8.png'
   }
 ];
 

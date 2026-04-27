@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Orbitron", sans-serif;
+
+  --color-cyber-blue: #00FFD1;
+  --color-cyber-pink: #FF007A;
+  --color-cyber-black: #050505;
+  --color-cyber-gray: #151515;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-black text-white selection:bg-cyber-blue selection:text-black;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-sans tracking-wide;
+  }
+}
+
+@layer utilities {
+  .cyber-grid {
+    background-image: 
+      linear-gradient(rgba(0, 255, 209, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 209, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 15px rgba(0, 255, 209, 0.3);
+  }
+
+  .glow-pink {
+    box-shadow: 0 0 15px rgba(255, 0, 122, 0.3);
+  }
+
+  .glass-card {
+    @apply bg-cyber-gray/40 border border-white/5;
+  }
+  
+  .sharp-card {
+    @apply bg-[#151515] border border-white/5;
+  }
+  
+  .animate-marquee {
+    animation: marquee 35s linear infinite;
+  }
+
+  .hover-cyber-3d {
+    @apply transition-all duration-300 transform-gpu cursor-pointer;
+  }
+  
+  .hover-cyber-3d:hover {
+    transform: translateY(-8px) translateX(-8px) scale(1.01);
+    box-shadow: 
+      1px 1px 0 #00FFD1,
+      2px 2px 0 #00FFD1,
+      3px 3px 0 #00FFD1,
+      4px 4px 0 #00FFD1,
+      5px 5px 0 #00FFD1,
+      6px 6px 0 #00FFD1,
+      15px 15px 30px rgba(0,0,0,0.9),
+      20px 20px 40px rgba(0, 255, 209, 0.3),
+      inset 0 0 15px rgba(0, 255, 209, 0.4);
+    z-index: 20;
+    border-color: #00FFD1;
+  }
+
+  .hover-cyber-3d-pink {
+    @apply transition-all duration-300 transform-gpu cursor-pointer;
+  }
+  
+  .hover-cyber-3d-pink:hover {
+    transform: translateY(-8px) translateX(-8px) scale(1.01);
+    box-shadow: 
+      1px 1px 0 #FF007A,
+      2px 2px 0 #FF007A,
+      3px 3px 0 #FF007A,
+      4px 4px 0 #FF007A,
+      5px 5px 0 #FF007A,
+      6px 6px 0 #FF007A,
+      15px 15px 30px rgba(0,0,0,0.9),
+      20px 20px 40px rgba(255, 0, 122, 0.3),
+      inset 0 0 15px rgba(255, 0, 122, 0.4);
+    z-index: 20;
+    border-color: #FF007A;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 1.5rem)); }
+}
